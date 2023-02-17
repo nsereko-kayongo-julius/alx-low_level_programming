@@ -1,7 +1,9 @@
 #include <stdio.h>
-
 /**
- * It prints the message "Programming is like building a multilingual puzzle,"
+ * main - Entry point of the program
+ *
+ * Description: Prints a message to the standard error using the write() function
+ * Return: Always returns 1 to indicate an error occurred
  */
 int main(void)
 {
