@@ -2,8 +2,8 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints a message to the standard error using the write() function
- * Return: Always returns 1 to indicate an error occurred
+ * Description: Prints a message
+ * Return: Always returns 0 to indicate no error occurred
  */
 int main(void)
 {
