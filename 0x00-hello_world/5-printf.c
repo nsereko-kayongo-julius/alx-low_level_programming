@@ -3,7 +3,7 @@
  * main - Entry point of the program
  *
  * Description: Prints a message
- * Return: Always returns 0 to indicate no error 
+ * Return: Always returns 0 to indicate no error occurred
  */
 int main(void)
 {
