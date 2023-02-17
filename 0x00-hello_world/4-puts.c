@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * It prints the message "Programming is like building a multilingual puzzle,"
  */
 int main(void)
