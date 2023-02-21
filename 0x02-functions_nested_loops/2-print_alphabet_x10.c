@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
-* main - print 10x alphabet
+*  _islower - print 10x alphabet
+* @c: parameter
 *
 * Return: return 0 for succes
 */
 
-int main(void)
+int _islower(int c)
 {
-	int i = 0, int j;
+	int j, i = 0;
 
 	while (i <= 10)
 	{
-		int j;
 
 		for (j = 'a'; j <= 'z'; j++)
 			_putchar(j);
