@@ -9,8 +9,15 @@
 
 int _abs(int x)
 {
-	int x;
+	int val;
 
-	if (x >= 0 || x < 0)
-		return (x);
+	if (x < 0)
+	{
+
+		val = c * -1;
+
+		return (val);
+	}
+
+	return (x);
 }
