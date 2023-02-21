@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_alphabe - entry point of code
+* print_alphabet - entry point of code
 *
 * Return: retun o for success
 */
