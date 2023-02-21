@@ -2,8 +2,6 @@
 
 /**
 * jack_bauer - prints every minute of the day
-* @h: parameter
-* @m: parameters
 */
 
 void jack_bauer(void)
@@ -17,7 +15,7 @@ void jack_bauer(void)
 		_putchar((h / 10) + '0');
 		_putchar((h % 10) + '0');
 		_putchar(':');
-		_putchar((m /10) + '0');
+		_putchar((m / 10) + '0');
 		_putchar((m % 10) + '0');
 		_putchar('\n');
 		}
