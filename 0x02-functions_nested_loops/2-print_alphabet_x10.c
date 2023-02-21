@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
-*  _islower - print 10x alphabet
-* @c: parameter
+* print_alphabet_x10 - print 10x alphabet
 *
 * Return: return 0 for succes
 */
 
-int _islower(int c)
+void print_alphabet_x10(void)
 {
 	int c, i = 0;
 
