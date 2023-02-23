@@ -3,10 +3,10 @@
 /**
 * main - prnint fizzbuzz
 *
-* return: return 0 for success
+* Return: return 0 for success
 */
 
-int main (void)
+int main(void)
 {
 
 	int num;
