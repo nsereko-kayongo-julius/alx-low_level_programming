@@ -1,15 +1,17 @@
 #include "main.h"
 
- /**
-  * print_square - print square
-  * @size: square sizei
-  *
-  */
+/**
+ * print_square - print square
+ * @size: square sizei
+ *
+ */
 
 void print_square(int size)
 {
 	int i, j;
 
+	if (size < 1)
+		_putchar('\n')
 	for (i = 1; i <= size; i++)
 	{
 		for (j = 1; j <= size; j++)
