@@ -1,16 +1,26 @@
-#include "main.h"
-
+#include "main.h" 
 /**
-* main - test the function
-*
-* Return: return 0
-*/
+ * positive_or_negative - function
+ * @n: number to check
+ *
+ * Return: 0 for success
+ */
 
-int main(void)
+void positive_or_negative(int n)
 {
-	int i;
 
-	i = 5;
-	positive_or_negative(i);
-	return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	else if (n < 0)
+	{
+		printf("%d is negative\n", n);
+	}
+	else
+	{		
+		printf("%d is zero\n", n);
+	}
 }
