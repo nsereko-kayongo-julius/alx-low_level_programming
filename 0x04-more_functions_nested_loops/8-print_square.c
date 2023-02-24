@@ -2,18 +2,16 @@
 
 /**
  * print_square - print square
- * @size: square sizei
+ * @size: square size
  *
  */
 
 void print_square(int size)
 {
-	int i, j;
+	int x;
+	int j;
 
-	if (i <= 0)
-		_putchar('\n');
-
-	for (i = 1; i <= size; i++)
+	for (x = 1; x <= size; x++)
 	{
 		for (j = 1; j <= size; j++)
 			_putchar('#');
@@ -21,4 +19,7 @@ void print_square(int size)
 
 		_putchar('\n');
 	}
+
+	if (x <= 0)
+		_putchar('\n');
 }
