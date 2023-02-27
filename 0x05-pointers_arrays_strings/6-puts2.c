@@ -1,3 +1,4 @@
+#include "main.h"
 
 /**
  * puts2 - prints every character
