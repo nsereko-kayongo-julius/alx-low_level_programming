@@ -26,7 +26,7 @@ char *_strcpy(char *dest, char *src)
 
 	a = a;
 
-	while (i <= n)
+	while (a <= n)
 	{
 		dest[a] = '\0';
 		a++;
