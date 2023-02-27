@@ -2,8 +2,8 @@
 
 /**
 * swap_int - swap
-* @*a: first int
-* @*b: second integer
+* @a: first int
+* @b: second integer
 *
 */
 
