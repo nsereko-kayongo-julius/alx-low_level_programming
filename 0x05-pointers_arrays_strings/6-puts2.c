@@ -1,4 +1,3 @@
-#include "main.h"
 
 /**
  * puts2 - prints every character
@@ -8,12 +7,18 @@
 void puts2(char *str)
 {
 
-	int a;
+	int a = 0, b = 0;
 
 	while (str[a] != '\0')
 	{
-		_putchar(str[a]);
-		a += 2;
+		;
+		a++;
+	}
+
+	while (b < a)
+	{
+		_putchar(str[b]);
+		j = j + 2;
 	}
 
 	_putchar('\n');
