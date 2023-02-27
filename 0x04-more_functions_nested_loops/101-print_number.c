@@ -9,5 +9,6 @@
 
 void print_number(int n)
 {
+	if
 	_putchar(n);
 }
