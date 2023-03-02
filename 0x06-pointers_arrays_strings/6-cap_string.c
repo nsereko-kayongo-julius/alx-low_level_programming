@@ -28,5 +28,5 @@ char *cap_string(char *str)
 		}
 		count++;
 	}
-	return (s);
+	return (str);
 }
