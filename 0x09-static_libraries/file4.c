@@ -49,4 +49,16 @@ char *_strpbrk(char *s, char *accept)
 char *_strstr(char *haystack, char *needle)
 {
 
+
+}
+
+/**
+ * *_putchar - function
+ * @c: char
+ * Return: 1
+ */
+
+int _putchar(char c)
+{
+
 }
