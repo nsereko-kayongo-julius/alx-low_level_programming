@@ -12,6 +12,6 @@ int main(int argc, char *argv[])
 
 	int arg_num = argc - 1;
 
-	printf("%d\n", arg_num);
+	printf("%d arguents were recieved from %s\n", arg_num, argv[0]);
 	return (0);
 }
