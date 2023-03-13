@@ -3,7 +3,7 @@
 
 /**
  * main - main function
- * @rgc: argument count
+ * @argc: argument count
  * @argv: argument vector
  * Return: 0
  */
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < 3; i++)
 			result *= atoi(argv[i]);
 
-		printf("%d\n",result);
+		printf("%d\n", result);
 	}
 
 	return (0);
