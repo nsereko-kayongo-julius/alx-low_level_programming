@@ -8,16 +8,29 @@
  *@height: columns of string
  * Return: a pointer to a 2 dimensional array of integers or null
  */
-void free_grid(int **grid, int height)
+int **alloc_grid(int width, int height)
 {
-	int i;
-	int *p;
+	int **arr;
+	int i, j;
 
+	if (width < 1 || height < 1)
+		return (NULL);
+	arr = malloc(sizeof(int *) * height);
+	if (arr == NULL)
+		return (NULL);
 	for (i = 0; i < height; i++)
 	{
-		p = grid[i];
-		free(p);
+		arr[i] = malloc(sizeof(int) * width);
+		if (arr[i] == NULL)
+		{
+			for (--i; i >= 0; i--)
+				free(arr[i]);
+			free(arr);
+			return (NULL);
+		}
 	}
-	free(grid);
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			arr[i][j] = 0;
+	return (arr);
 }
-
