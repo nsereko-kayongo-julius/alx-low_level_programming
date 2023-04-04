@@ -1,46 +1,47 @@
 #include "lists.h"
+
 /**
- * insert_nodeint_at_index - thsi function create a new index
- * @head: the head of list
- * @idx: the index to put the new node
- * @n: the value to put in the nex node.
- * Description: this function create a new index
- * section header: the header of this function is lists.h)*
- * Return: return the final result of the sum
+ * insert_nodeint_at_index - function with 3 arguments
+ * @head: pointer to head pointer of first node in linked list
+ * @idx: index of list
+ * @n: value integer
+ *
+ * Description: inserts a new node at a given position
+ * Return: address of the new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *node, *actual;
-	unsigned int i;
+	listint_t *temp, *cursor;
+	unsigned int count = 0;
 
 	if (head == NULL)
 		return (NULL);
 
-	node = malloc(sizeof(listint_t));
-
-	if (node == NULL)
+	temp = malloc(sizeof(listint_t));
+	if (temp == NULL)
 		return (NULL);
-	node->n = n;
+	temp->n = n;
+	cursor = *head;
 
-	if (idx == '\0')
+	if (idx == 0)
 	{
-		node->next = *head;
-		*head = node;
-		return (node);
+		temp->next = *head;
+		*head = temp;
+		return (*head);
 	}
 
-	actual = *head;
-
-	for (i = 0; actual; i++)
+	while (cursor != NULL)
 	{
-		if (i == idx - 1)
+		if (count == idx - 1)
 		{
-			node->next = actual->next;
-			actual->next = node;
-			return (node);
+			temp->next = cursor->next;
+			cursor->next = temp;
 		}
-		actual = actual->next;
+		count++;
+		cursor = cursor->next;
 	}
-	free(node);
-	return (NULL);
+	if (idx > count)
+		return (NULL);
+	return (temp);
+
 }
