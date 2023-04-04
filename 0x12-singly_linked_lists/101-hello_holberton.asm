@@ -1,16 +1,23 @@
-section .text
-	global main
+%define sys_write 1
+%define stdout 1
 
-main:
-	mov	edx, len
-	mov	ecx, msg	;message variable
-	mov 	ebx, 1		;write to standard output
-	mov	eax, 4
-	int	0x80		;call kernel
+%define sys_exit 60
+%define success 0
 
-	mov	eax, 1 		;system call (sys_exit)
-	int	0x80		;call kernel
+%define nl 10
 
 section .data
-msg db 'Hello, Coding', 0xa	;message to print
-len equ $ - msg			;length of the string
+
+	message db "Hello, Holberton", nl
+
+section .text
+	global main
+main:
+	mov rax, sys_write
+	mov rdi, stdout
+	mov rsi, message
+	mov rdx, 17
+	syscall
+	mov    rax, sys_exit
+	mov    rdi, success
+	syscall
