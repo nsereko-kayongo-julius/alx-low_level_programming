@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * string_nconcat - copy a string.
 (* a blank line
